@@ -1,0 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: subdominio
+spec:
+  rules:
+  - host: blue.veronez.net
+    http:
+      paths:
+      - backend:
+        serviceName: blue-service
+        servicePort: 80
+  - host: green.veronez.net
+    http:
+      paths:
+      - backend:
+        serviceName: green-service
+        servicePort: 80          
+
