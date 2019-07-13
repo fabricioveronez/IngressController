@@ -1,2 +1,7 @@
-FROM nginx
-COPY ./index.html /usr/share/nginx/html/index.html
+FROM node
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+EXPOSE 8080
+ENTRYPOINT node index.js

@@ -8,12 +8,12 @@ spec:
     http:
       paths:
       - backend:
-        serviceName: blue-service
-        servicePort: 80
+          serviceName: blue-service
+          servicePort: 80
   - host: green.veronez.net
     http:
       paths:
       - backend:
-        serviceName: green-service
-        servicePort: 80          
+          serviceName: green-service
+          servicePort: 80          
 
