@@ -10,13 +10,8 @@ spec:
       - path: /blue
         backend:
           serviceName: blue-service
-          servicePort: 80
+          servicePort: 80       
       - path: /green
         backend:
           serviceName: green-service
-          servicePort: 80   
-      - path: /
-        backend:
-          serviceName: nginx-service
-          servicePort: 80                
-
+          servicePort: 80             

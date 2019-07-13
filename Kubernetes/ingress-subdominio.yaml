@@ -16,10 +16,4 @@ spec:
       - backend:
           serviceName: green-service
           servicePort: 80       
-  - host: nginx.veronez.net
-    http:
-      paths:
-      - backend:
-          serviceName: nginx-service
-          servicePort: 80      
-
+    
